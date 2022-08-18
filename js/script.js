@@ -71,7 +71,7 @@ function slide(sliderContainer, sliderItems, prev, next) {
     let lastSlide = slides[slidesLength - 1];
     let cloneFirst = firstSlide.cloneNode(true);
     let cloneLast = lastSlide.cloneNode(true);
-    let prevIndex = -1;
+    let prevIndex = slidesLength - 1;
     let index = 0;
     let allowShift = true;
     slides[0].classList.add('selected');
