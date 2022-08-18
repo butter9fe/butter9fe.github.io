@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="js/script.js" defer></script>
+    <title>VTubers | Database</title>
+</head>
+<body>
+    <div class="content">
+        <nav id="large-nav">
+            <a href="#" class="logo">VTUBERS</a>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="rise.html">The Rise</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="#" class="active">Database</a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobile-nav">
+            <a href="#" class="logo">VTUBERS</a>
+            <a class="hamburger-button">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+
+            <div class="nav-overlay">
+                <div class="overlay-menu">
+                    <div>
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="rise.html">The Rise</a></li>
+                            <li><a href="technology.html">Technology</a></li>
+                            <li><a href="#" class="active">Database</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="page">
+       <div id="page-title">
+            <h1 class="glitch-title">Agency Database</h1>
+            <p>A database of the currently popular VTuber agencies, their talents and language.</p>
+            <p>Note that this list is not complete, for the entire database, please check out the fanmade <a href="https://virtualyoutuber.fandom.com/wiki/Category:Agency" target="_blank">Virtual YouTuber Wiki</a>.</p> 
+            <form>
+                <label for="name">
+                    <input type="text" name="name" id="name" placeholder="Search an agency..." />
+                </label>
+                <div>
+                    <h2>Language</h2>
+                    <!-- Using radio rather than select for custom animations -->
+                    <span class="dropdown">
+                        <input type="radio" name="language" value="All" checked="checked" id="lang-all" />
+                        <label for="lang-all">
+                            All
+                        </label>
+
+                        <input type="radio" name="language" value="English" id="lang-english" />
+                        <label for="lang-english">
+                            English
+                        </label>
+
+                        <input type="radio" name="language" value="Japanese" id="lang-japanese" />
+                        <label for="lang-japanese">
+                            Japanese
+                        </label>
+
+                        <input type="radio" name="language" value="Indonesian" id="lang-indonesian" />
+                        <label for="lang-indonesian">
+                            Indonesian
+                        </label>
+
+                        <input type="radio" name="language" value="Others" id="lang-others" />
+                        <label for="lang-others">
+                            Others
+                        </label>
+                    </span>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+            <div class="database">
+                <!-- Info here would be generated in purely Javascript -->
+            </div>
+       </div>
+    </div>
+</body>
