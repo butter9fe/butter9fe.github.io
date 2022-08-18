@@ -1,3 +1,14 @@
+// Prevent mobile from scrolling
+window.addEventListener("scroll", preventMotion, false);
+window.addEventListener("touchmove", preventMotion, false);
+
+function preventMotion(event)
+{
+    window.scrollTo(0, 0);
+    event.preventDefault();
+    event.stopPropagation();
+}
+
 //Change nav background from transparent to opaque after scrolling
 let page = document.querySelector(".page");
 let navBar = document.querySelector("nav");
