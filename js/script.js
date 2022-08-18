@@ -200,7 +200,6 @@ if(document.URL.includes("rise.html"))
 
 //Highlight timeline when passed the dot
 function updateHighlights (timelineItems) {
-    console.log(timelineItems[0].getBoundingClientRect().top);
     timelineItems.forEach((item) => {
         let itemBounds = item.getBoundingClientRect();
         
