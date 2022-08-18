@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hobbies | Drawing</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    </head>
+    <body>
+        <!-- Navbar, same for every page -->
+        <nav>
+            <!-- Logo of my name on left side of navbar -->
+            <div class="logo" onclick="location.href='../index.html';">
+                <img src="../images/logo.png" alt="LLian" />
+            </div>
+
+            <!-- Main Navigation -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../hobbies.html" class="active">Hobbies</a></li>
+            </ul>
+        </nav>
+
+        <div id="hobby-subpage">
+            <h1>My Works</h1>
+            <p>A gallery of some of the drawings I've done over the years!</p>
+            <p>
+                <a class="link" href="../hobbies.html">
+                    <svg fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
+                    stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7
+                    7h18"></path></svg>
+                    Back
+                </a>
+            </p>
+
+            <div id="gallery">
+                <input type="radio" name="slider" id="slide1" checked />
+                <input type="radio" name="slider" id="slide2" />
+                <input type="radio" name="slider" id="slide3" />
+
+                <div id="slides">
+                    <div id="container">
+                        <div class="inner">
+                            <article>
+                                <div class="tooltip">
+                                    <h3>Anime Eye Drawing Practice</h3>
+                                </div>
+                                <img src="../images/art1.jpg" alt="Drawing of Eyes" />
+                            </article>
+                            <article>
+                                <div class="tooltip">
+                                    <h3>Drawing of Arua</h3>
+                                    <h4>From Soulworker</h4>
+                                </div>
+                                <img src="../images/art2.jpg" alt="Drawing of Arua" />
+                            </article>
+                            <article>
+                                <div class="tooltip">
+                                    <h3>Drawing of Megumin</h3>
+                                    <h4>From Konosuba</h4>
+                                </div>
+                                <img src="../images/art3.jpg" alt="Drawing of Megumin" />
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+                <div id="active-slide">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
