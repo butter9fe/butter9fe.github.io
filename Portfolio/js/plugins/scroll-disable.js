@@ -1,4 +1,4 @@
-import { ScrollbarPlugin } from "smooth-scrollbar";
+import { ScrollbarPlugin } from "https://unpkg.com/smooth-scrollbar@8.8.1/scrollbar.js";
 
 export class ModalPlugin extends ScrollbarPlugin {
   static pluginName = "modal";
