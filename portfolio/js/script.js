@@ -1,5 +1,5 @@
-import Scrollbar from "https://unpkg.com/smooth-scrollbar@8.8.1/scrollbar.js";
-import { gsap, Power1 } from "https://unpkg.com/gsap@3.11.3/gsap-core.js";
+import Scrollbar from "./plugins/smooth-scrollbar/scrollbar.js";
+import { gsap, Power1 } from "./plugins/gsap/gsap-core";
 import { ModalPlugin } from "./plugins/scroll-disable";
 import { DATA } from "./data";
 
