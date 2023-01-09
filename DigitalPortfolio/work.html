@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="js/script.js" defer type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <title>Work | LL's Portfolio</title>
+</head>
+<body>
+    <nav id="navigation">
+        <a href="index.html" class="logo">LI LIAN<span>.</span></a>
+        <a class="hamburger-button">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+    
+        <div class="nav-overlay">
+            <div class="overlay-menu">
+                <div>
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="#" class="active">Work</a></li>
+                        <!-- <li><a href="experiences.html">Experiences</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="page">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <h2><span>My Work</span></h2>
+        <section class="work">
+            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                <div class="work-image">
+                    <div class="slideInfo">
+                        <div><h2>Operation I.C.C.</h2>
+                        <p>A 3D Game made using C++ in OpenGL</p></div>
+                        <a href="workcontent.html?id=0" class="button"><span>View Project</span><i></i></a>
+                    </div>
+                    <img src="images/1_SP2.jpg" draggable="false" />
+                </div>
+                <div class="work-image selected">
+                    <div class="slideInfo">
+                        <div>
+                            <h2>Hollow Knight Remake</h2>
+                            <p>A 2D Game made using C# in Unity</p>
+                        </div>
+                        <a href="workcontent.html?id=1" class="button"><span>View Project</span><i></i></a>
+                    </div>
+                    <img src="images/2_HollowKnight.png" draggable="false" />
+                </div>
+                <div class="work-image">
+                    <div class="slideInfo">
+                        <div>
+                            <h2>VTuber Website</h2>
+                            <p>A fullstack website made with HTML, CSS, Javascript and MySQL Database</p>
+                        </div>
+                        <a href="workcontent.html?id=2" class="button"><span>View Project</span><i></i></a>
+                    </div>
+                    <img src="images/3_VTuberWeb.png" draggable="false" />
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
