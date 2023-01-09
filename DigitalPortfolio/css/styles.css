@@ -151,6 +151,7 @@ a.button {
     font-weight: bold;
     padding: 1rem 2rem;
     transition: all 0.5s ease;
+    cursor: pointer;
  }
 
  a.button:hover {
@@ -210,7 +211,9 @@ a.button {
       width: 20px;
       left: 80%;
   }
-
+  svg {
+    color: white;
+  }
  /**
  /* Navbar
 **/
@@ -340,6 +343,8 @@ a.button {
      width: 35vw;
      background: var(--main);
  }
+
+ 
 
  .overlay-menu ul {
      height: 100%;
@@ -683,6 +688,7 @@ a.button {
  /**
 /* Work
 **/
+
 #image-track {
     display: flex;
     gap: 15vmin;
@@ -690,7 +696,6 @@ a.button {
     left: 25%;
     top: 50%;
     transform: translate(-15%, -30%);
-    cursor: grab;
 
     animation: fadeIn 500ms backwards 0.5s 1;
 }
@@ -787,6 +792,7 @@ h2 > span {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -10;
 }
 
 .circles li {
@@ -882,6 +888,9 @@ h2 > span {
     margin-bottom: 5rem;
 }
 
+ /**
+/* Work Content
+**/
 #videoContainer {
     position: relative;
     height: 65vh;
@@ -935,6 +944,106 @@ h2 > span {
 .workNavButtons button {
     margin: 0 1rem;
     position: relative;
+}
+
+ /**
+/* Contact
+**/
+.contact-section {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    padding-top: 10rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact > div:nth-child(1) {
+    animation: fadeIn 1s backwards 0.8s 1;
+}
+
+.contact > div:nth-child(2) {
+    animation: fadeIn 1s backwards 1.5s 1;
+}
+
+.contact-section h2>span {  
+    font-family: "Dancing Script", sans-serif;
+    font-weight: bold;
+    font-size: 7rem;
+    text-indent: 1px;
+    background: linear-gradient(to right,
+            var(--main-light),
+            var(--accent),
+            var(--accent-lighter),
+            var(--main-light));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-drag: none;
+
+    animation: background-pan 5s linear infinite;
+}
+
+.contact-section h2 {
+    transform: translate(0%, 0%);
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+    animation: flyRight 1s backwards 1;
+}
+
+.contact > div:nth-child(1) p {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: 2%;
+    margin-bottom: 10rem;
+}
+
+.contact >div:nth-child(1) a {
+    margin-left: 2%;
+}
+.contact>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contactInfo {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact >div:nth-child(2) p {
+    font-size: 2rem;
+}
+
+.contact>div:nth-child(2) svg {
+    width: 2rem;
+    height: 2rem;
+    color: #c44464;
+    transition: all .3s ease;
+}
+
+.contact>div:nth-child(2) a {
+    text-decoration: none;
+    color: var(--accent);
+    transition: all .3s ease;
+}
+
+.contact>div:nth-child(2) a:hover {
+    text-decoration: none;
+    color: var(--accent-lighter);
+    text-decoration: underline;
+    transform: scale(0.97);
+}
+
+.contact>div:nth-child(2) a:hover svg {
+    color: var(--main-dark);
 }
 
 @keyframes animate {

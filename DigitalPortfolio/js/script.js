@@ -177,7 +177,7 @@ if (document.URL.includes("work.html")) {
   const track = document.getElementById("image-track");
   const imageContainers = track.getElementsByClassName("work-image");
   const images = document.querySelectorAll(".work-image img");
-
+  page.style.cursor = "grab";
   // Make an invisible slider that follows no matter where user presses
   window.onmousedown = (e) => {
     track.dataset.mouseDownAt = e.clientX;
@@ -188,13 +188,13 @@ if (document.URL.includes("work.html")) {
 
     const handleOnDown = (e) => {
       track.dataset.mouseDownAt = e.clientX;
-      track.style.cursor = "grabbing";
+      page.style.cursor = "grabbing";
     };
 
     const handleOnUp = () => {
       track.dataset.mouseDownAt = "0";
       track.dataset.prevPercentage = track.dataset.percentage;
-      track.style.cursor = "grab";
+      page.style.cursor = "grab";
     };
 
     const handleOnMove = (e) => {
