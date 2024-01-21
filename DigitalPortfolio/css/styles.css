@@ -27,14 +27,14 @@
 
 :root {
     /* Declaring colour variables */
-        --main: #2F4EB1;
-        --main-dark: #8920AD;
-        --main-light: #8E7CCD;
-        --accent: #F37191;
-        --accent-lighter: #748FFF;
-        --text-dark: #8491a0;
-        --background: #012532;
-        --background-dark: #00131c;
+    --main: #2F4EB1;
+    --main-dark: #8920AD;
+    --main-light: #8E7CCD;
+    --accent: #F37191;
+    --accent-lighter: #748FFF;
+    --text-dark: #8491a0;
+    --background: #012532;
+    --background-dark: #00131c;
 }
 
 * {
@@ -91,54 +91,52 @@ body {
 /* 
 /* Main styles for elements
  */
- p {
-     font-family: "Quicksand", sans-serif;
-     font-size: 1.1rem;
-     line-height: 1.7rem;
-     margin-bottom: 1.2rem;
- }
+p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 1.2rem;
+}
 
- p > span {
+p>span {
     font-family: "Dancing Script", sans-serif;
     font-weight: bold;
     font-size: 1.7rem;
-    background: linear-gradient(
-        to right,
-        var(--main-light),
-        var(--accent),
-        var(--accent-lighter),
-        var(--main-light)
-    );
+    background: linear-gradient(to right,
+            var(--main-light),
+            var(--accent),
+            var(--accent-lighter),
+            var(--main-light));
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
 
     animation: background-pan 5s linear infinite;
- }
+}
 
- a {
-     font-family: "Quicksand", sans-serif;
-     color: var(--accent);
-     font-weight: bold;
- }
+a {
+    font-family: "Quicksand", sans-serif;
+    color: var(--accent);
+    font-weight: bold;
+}
 
- a:hover {
-     color: var(--accent-lighter);
- }
+a:hover {
+    color: var(--accent-lighter);
+}
 
- h1,
- h2 {
-     font-family: "Poppins", sans-serif;
- }
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+}
 
- h1 {
-     font-size: 6rem;
- }
+h1 {
+    font-size: 6rem;
+}
 
- h2 {
+h2 {
     font-size: 5rem;
- }
+}
 
 a.button {
     position: relative;
@@ -152,33 +150,33 @@ a.button {
     padding: 1rem 2rem;
     transition: all 0.5s ease;
     cursor: pointer;
- }
+}
 
- a.button:hover {
+a.button:hover {
     background: var(--accent-lighter);
     letter-spacing: 0.25em;
     box-shadow: 0 0 35px var(--accent-lighter);
- }
+}
 
- a.button::before {
+a.button::before {
     content: '';
     position: absolute;
     inset: 2px;
     background: var(--background);
- }
+}
 
- a.button span {
+a.button span {
     position: relative;
     z-index: 1;
- }
+}
 
- a.button i {
+a.button i {
     position: absolute;
     inset: 0;
     display: block;
- }
+}
 
- a.button i::before {
+a.button i::before {
     content: '';
     position: absolute;
     top: 0;
@@ -187,51 +185,53 @@ a.button {
     height: 4px;
     background: var(--background-dark);
     transform: translateX(-50%) skewX(325deg);
-    transition:  all 0.5s ease;
- }
+    transition: all 0.5s ease;
+}
 
- a.button:hover i::before {
+a.button:hover i::before {
     width: 20px;
     left: 20%;
- }
+}
 
-  a.button i::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 20%;
-      width: 10px;
-      height: 4px;
-      background: var(--background-dark);
-      transform: translateX(-50%) skewX(325deg);
-      transition: all 0.5s ease;
-  }
+a.button i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: var(--background-dark);
+    transform: translateX(-50%) skewX(325deg);
+    transition: all 0.5s ease;
+}
 
-  a.button:hover i::after {
-      width: 20px;
-      left: 80%;
-  }
-  svg {
+a.button:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+
+svg {
     color: white;
-  }
- /**
+}
+
+/**
  /* Navbar
 **/
- #navigation ul li a {
-     text-decoration: none;
-     color: silver;
-     font-weight: bold;
-     padding: 0.5rem 1.5rem;
-     border-radius: 10px;
-     height: 100%;
-     transition: all .3s ease;
- }
+#navigation ul li a {
+    text-decoration: none;
+    color: silver;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    height: 100%;
+    transition: all .3s ease;
+}
 
- ul {
-     list-style: none;
- }
+ul {
+    list-style: none;
+}
 
- #navigation {
+#navigation {
     position: absolute;
     top: 0;
     left: 0;
@@ -246,182 +246,182 @@ a.button {
 
     /* Transition effect on scroll */
     transition: all .3s ease;
- }
+}
 
- #navigation .logo {
-     font-size: 3rem;
-     padding: 0.2rem 2%;
-     text-decoration: none;
-     font-family: "Poppins", sans-serif;
-     font-weight: 'bold';
-     color: white;
-     letter-spacing: 0.2rem;
- }
+#navigation .logo {
+    font-size: 3rem;
+    padding: 0.2rem 2%;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 'bold';
+    color: white;
+    letter-spacing: 0.2rem;
+}
 
- #navigation .logo span {
-     color: var(--accent-lighter);
-     font-size: 3rem;
- }
+#navigation .logo span {
+    color: var(--accent-lighter);
+    font-size: 3rem;
+}
 
- .page {
-     position: relative;
-     height: 100vh;
-     overflow-y: hidden;
-     overflow-x: hidden;
+.page {
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
-     animation: fadeIn 0.5s ease 1;
- }
+    animation: fadeIn 0.5s ease 1;
+}
 
- .hamburger-button {
-     position: absolute;
-     right: 30px;
-     /* top: 40px; */
-     cursor: pointer;
- }
+.hamburger-button {
+    position: absolute;
+    right: 30px;
+    /* top: 40px; */
+    cursor: pointer;
+}
 
- .hamburger-button div {
-     display: block;
-     width: 35px;
-     height: 3px;
-     margin-bottom: 4px;
-     background-color: white;
-     position: relative;
-     z-index: 2;
+.hamburger-button div {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
 
-     transition: all .3s ease;
- }
+    transition: all .3s ease;
+}
 
- .hamburger-button div:last-child {
-     width: 22px;
-     margin-left: auto;
- }
+.hamburger-button div:last-child {
+    width: 22px;
+    margin-left: auto;
+}
 
- .hamburger-button:hover div.bar1 {
-     transform: translateY(6px) rotate(90deg);
-     width: 30px;
- }
+.hamburger-button:hover div.bar1 {
+    transform: translateY(6px) rotate(90deg);
+    width: 30px;
+}
 
- .hamburger-button:hover div.bar2 {
-     width: 30px;
- }
+.hamburger-button:hover div.bar2 {
+    width: 30px;
+}
 
- .hamburger-button:hover div.bar3,
- #navigation.active .hamburger-button div.bar3 {
-     width: 0;
- }
+.hamburger-button:hover div.bar3,
+#navigation.active .hamburger-button div.bar3 {
+    width: 0;
+}
 
- #navigation.active .hamburger-button div.bar1 {
-     transform: translate(0, 7px) rotate(135deg);
-     width: 30px;
- }
+#navigation.active .hamburger-button div.bar1 {
+    transform: translate(0, 7px) rotate(135deg);
+    width: 30px;
+}
 
- #navigation.active .hamburger-button div.bar2 {
-     transform: rotate(45deg);
-     width: 30px;
- }
+#navigation.active .hamburger-button div.bar2 {
+    transform: rotate(45deg);
+    width: 30px;
+}
 
- .overlay-menu {
-     background: rgba(69, 79, 158, 0.5);
-     position: absolute;
-     width: 40vw;
-     height: 100vh;
-     top: 0;
-     left: auto;
-     opacity: 0;
-     visibility: hidden;
-     transform: translateX(50vw);
+.overlay-menu {
+    background: rgba(69, 79, 158, 0.5);
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    top: 0;
+    left: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50vw);
 
-     z-index: 9;
+    z-index: 9;
 
-     transition: all 0.5s ease;
- }
+    transition: all 0.5s ease;
+}
 
- .overlay-menu >div {
-     position: absolute;
-     right: 0;
-     height: 100vh;
-     width: 35vw;
-     background: var(--main);
- }
+.overlay-menu>div {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 35vw;
+    background: var(--main);
+}
 
- 
 
- .overlay-menu ul {
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
 
- .overlay-menu li {
-     color: white;
-     font-size: 4rem;
-     line-height: 8rem;
- }
+.overlay-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
- .overlay-menu a {
-     font-family: "Poppins", sans-serif;
-     text-transform: uppercase;
- }
+.overlay-menu li {
+    color: white;
+    font-size: 4rem;
+    line-height: 8rem;
+}
 
- .overlay-menu a:not(.active) {
-     position: relative;
-     background-image: linear-gradient(90deg, white 50%, silver 0);
-     background-position: 100% 0;
-     background-size: 200% 100%;
-     background-clip: padding-box;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
+.overlay-menu a {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
 
-     transition: background-position 2s ease-in-out;
- }
+.overlay-menu a:not(.active) {
+    position: relative;
+    background-image: linear-gradient(90deg, white 50%, silver 0);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
- .overlay-menu a:not(.active)::after {
-     /* Underline */
-     content: '';
-     display: inline-block;
-     width: 0;
-     height: 6px;
-     background-color: aqua;
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     cursor: pointer;
+    transition: background-position 2s ease-in-out;
+}
 
-     transition: width 1s ease;
- }
+.overlay-menu a:not(.active)::after {
+    /* Underline */
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 6px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
 
- .overlay-menu a:not(.active):hover {
-     color: white;
-     background-position: 0 0;
-     transition: all .3s ease;
- }
+    transition: width 1s ease;
+}
 
- .overlay-menu a:not(.active):hover::after {
-     width: 100%;
- }
+.overlay-menu a:not(.active):hover {
+    color: white;
+    background-position: 0 0;
+    transition: all .3s ease;
+}
 
- #navigation.active .overlay-menu {
-     opacity: 1;
-     visibility: visible;
-     right: 0;
-     z-index: 1;
+.overlay-menu a:not(.active):hover::after {
+    width: 100%;
+}
 
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
+#navigation.active .overlay-menu {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+    z-index: 1;
 
-     transform: translateX(0);
-     transition: all 1s ease;
- }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
- #navigation ul li a.active {
-     color: var(--main);
-     background: var(--accent);
- }
+    transform: translateX(0);
+    transition: all 1s ease;
+}
 
- /**
+#navigation ul li a.active {
+    color: var(--main);
+    background: var(--accent);
+}
+
+/**
 /* Landing
 **/
 #navigation.landingNav {
@@ -488,6 +488,14 @@ a.button {
 
 .tile:hover:before {
     background-color: var(--background);
+    color: var(--text-dark);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    line-height: 0.9em;
+    content: "Click Me!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tile:before {
@@ -505,7 +513,7 @@ a.button {
     pointer-events: none;
     width: 50vw;
     z-index: 3;
-    
+
     transition: opacity 500ms ease;
     animation: landingFlyLeft 1s ease 1;
 }
@@ -579,24 +587,25 @@ a.button {
 #scroll {
     position: absolute;
     left: 45%;
-    bottom: 5rem;
+    bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     transition: all .3s ease;
+    animation: bounce 2s ease-in-out infinite;
 }
 
 #scroll small {
     font-family: "Poppins", sans-serif;
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: var(--background-dark);
     text-transform: uppercase;
 }
 
 #scroll svg {
-    height: 2rem;
+    height: 2.5rem;
 }
 
 .gradientback {
@@ -605,17 +614,17 @@ a.button {
     left: 0px;
     width: 100%;
     height: 50px;
-    background: -moz-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(0,19,28, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(0, 19, 28, 1) 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(137, 255, 241, 0)), color-stop(100%, rgba(0,19,28, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(137, 255, 241, 0)), color-stop(100%, rgba(0, 19, 28, 1)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(0,19,28, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(0, 19, 28, 1) 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(1,37,50, 1) 100%);
+    background: -o-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(1, 37, 50, 1) 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(0,19,28, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(137, 255, 241, 0) 0%, rgba(0, 19, 28, 1) 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, rgba(137, 255, 241, 0) 0%, rgba(0,19,28, 1) 100%);
+    background: linear-gradient(to bottom, rgba(137, 255, 241, 0) 0%, rgba(0, 19, 28, 1) 100%);
 }
 
 /*  About Me  */
@@ -641,7 +650,7 @@ a.button {
     position: relative;
 }
 
-.about .photo-item > div {
+.about .photo-item>div {
     transform: perspective(200px) rotateX(0deg) rotateY(0deg);
     transform-style: preserve-3d;
     transition: all .1s ease;
@@ -671,7 +680,7 @@ a.button {
     top: 0;
     left: 0;
     z-index: 5;
-    width: 33.5rem;
+    width: 32.5rem;
     filter: drop-shadow(5px 5px 5px #222);
 }
 
@@ -685,26 +694,22 @@ a.button {
     transform-style: preserve-3d;
 }
 
- /**
+/**
 /* Work
 **/
 
-.work-title {
-
-}
-
 #image-track {
     display: flex;
-    gap: 15vmin;
+    gap: 4vmin;
     position: absolute;
-    left: 25%;
+    left: 50%;
     top: 50%;
-    transform: translate(-15%, -30%);
+    transform: translate(-7%, -30%);
 
     animation: fadeIn 500ms backwards 0.5s 1;
 }
 
-#image-track > div {
+#image-track>div {
     position: relative;
 }
 
@@ -723,8 +728,8 @@ a.button {
 #image-track .work-image.selected img {
     scale: 1.1;
     -webkit-box-shadow: 0px 0px 34px 5px rgba(47, 74, 225, 0.81);
-        -moz-box-shadow: 0px 0px 34px 5px rgba(47, 74, 225, 0.81);
-        box-shadow: 0px 0px 34px 5px rgba(47, 74, 225, 0.81);
+    -moz-box-shadow: 0px 0px 34px 5px rgba(47, 74, 225, 0.81);
+    box-shadow: 0px 0px 34px 5px rgba(47, 74, 225, 0.81);
 
     pointer-events: all;
 }
@@ -749,13 +754,13 @@ a.button {
     margin-bottom: 0;
 }
 
-.work-title svg{
+.work-title svg {
     width: 10rem;
     margin: 0;
     color: var(--accent-lighter);
 }
 
-.page h2 > span {
+.page h2>span {
     font-family: "Dancing Script", sans-serif;
     font-weight: bold;
     font-size: 7rem;
@@ -773,7 +778,7 @@ a.button {
     animation: titleFlyRight 500ms backwards 1, background-pan 5s linear infinite;
 }
 
-h2 > span {
+h2>span {
     color: var(--accent);
 }
 
@@ -798,7 +803,7 @@ h2 > span {
 .slideInfo h2 {
     font-size: 2.5rem;
     font-family: "Dancing Script", sans-serif;
-        font-weight: bold;
+    font-weight: bold;
 }
 
 .slideInfo a.button {
@@ -913,7 +918,7 @@ h2 > span {
     margin-bottom: 5rem;
 }
 
- /**
+/**
 /* Work Content
 **/
 #videoContainer {
@@ -971,7 +976,7 @@ h2 > span {
     position: relative;
 }
 
- /**
+/**
 /* Contact
 **/
 .contact-section {
@@ -987,15 +992,15 @@ h2 > span {
     grid-template-columns: 2fr 1fr;
 }
 
-.contact > div:nth-child(1) {
+.contact>div:nth-child(1) {
     animation: fadeIn 1s backwards 0.8s 1;
 }
 
-.contact > div:nth-child(2) {
+.contact>div:nth-child(2) {
     animation: fadeIn 1s backwards 1.5s 1;
 }
 
-.contact-section h2>span {  
+.contact-section h2>span {
     font-family: "Dancing Script", sans-serif;
     font-weight: bold;
     font-size: 7rem;
@@ -1022,16 +1027,17 @@ h2 > span {
     animation: flyRight 1s backwards 1;
 }
 
-.contact > div:nth-child(1) p {
+.contact>div:nth-child(1) p {
     font-size: 1.5rem;
     width: 80%;
     margin-left: 2%;
     margin-bottom: 10rem;
 }
 
-.contact >div:nth-child(1) a {
+.contact>div:nth-child(1) a {
     margin-left: 2%;
 }
+
 .contact>div:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -1043,7 +1049,7 @@ h2 > span {
     gap: 1rem;
 }
 
-.contact >div:nth-child(2) p {
+.contact>div:nth-child(2) p {
     font-size: 2rem;
 }
 
@@ -1135,14 +1141,29 @@ h2 > span {
 
 @keyframes landingFlyLeft {
     from {
-            opacity: 0;
-            transform: translate(-150%, -50%);
-        }
-    
-        to {
-            opacity: 1;
-            transform: translate(-50%, -50%);
-        }
+        opacity: 0;
+        transform: translate(-150%, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes float {

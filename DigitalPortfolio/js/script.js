@@ -203,12 +203,12 @@ if (document.URL.includes("work.html")) {
       const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
         maxDelta = window.innerWidth / 2;
 
-      const percentage = (mouseDelta / maxDelta) * -100 - 15,
+      const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained =
           parseFloat(track.dataset.prevPercentage) + percentage,
         nextPercentage = Math.max(
-          Math.min(nextPercentageUnconstrained, 20),
-          -55
+          Math.min(nextPercentageUnconstrained, -7),
+          -93
         );
 
       track.dataset.percentage = nextPercentage;
@@ -231,23 +231,50 @@ if (document.URL.includes("work.html")) {
         );
       }
 
-      if (nextPercentage >= 15) {
-        imageContainers[0].classList.add("selected");
-        imageContainers[1].classList.remove("selected");
-        imageContainers[2].classList.remove("selected");
-      } else if (nextPercentage >= -20 && nextPercentage <= -10) {
-        imageContainers[0].classList.remove("selected");
-        imageContainers[1].classList.add("selected");
-        imageContainers[2].classList.remove("selected");
-      } else if (nextPercentage <= -50) {
-        imageContainers[0].classList.remove("selected");
-        imageContainers[1].classList.remove("selected");
-        imageContainers[2].classList.add("selected");
-      } else {
-        imageContainers[0].classList.remove("selected");
-        imageContainers[1].classList.remove("selected");
-        imageContainers[2].classList.remove("selected");
+      console.log("Next: " + nextPercentage);
+      let selectedIndex;
+      if (nextPercentage >= -17) {
+        selectedIndex = 0;
       }
+      else if (nextPercentage >= -34){
+        selectedIndex = 1;
+      }
+      else if (nextPercentage >= -51){
+        selectedIndex = 2;
+      }
+      else if (nextPercentage >= -68){
+        selectedIndex = 3;
+      }
+      else if (nextPercentage >= -85){
+        selectedIndex = 4;
+      }
+      else {
+        selectedIndex = 5;
+      }
+
+      for (var i = 0; i < imageContainers.length; i++) {
+        if (i == selectedIndex)   
+          imageContainers[i].classList.add("selected");
+        else
+          imageContainers[i].classList.remove("selected");
+      }
+      // if (nextPercentage >= 15) {
+      //   imageContainers[0].classList.add("selected");
+      //   imageContainers[1].classList.remove("selected");
+      //   imageContainers[2].classList.remove("selected");
+      // } else if (nextPercentage >= -20 && nextPercentage <= -10) {
+      //   imageContainers[0].classList.remove("selected");
+      //   imageContainers[1].classList.add("selected");
+      //   imageContainers[2].classList.remove("selected");
+      // } else if (nextPercentage <= -50) {
+      //   imageContainers[0].classList.remove("selected");
+      //   imageContainers[1].classList.remove("selected");
+      //   imageContainers[2].classList.add("selected");
+      // } else {
+      //   imageContainers[0].classList.remove("selected");
+      //   imageContainers[1].classList.remove("selected");
+      //   imageContainers[2].classList.remove("selected");
+      // }
     };
 
     /* -- Had to add extra lines for touch events -- */
