@@ -257,23 +257,6 @@ if (document.URL.includes("work.html")) {
         else
           imageContainers[i].classList.remove("selected");
       }
-      // if (nextPercentage >= 15) {
-      //   imageContainers[0].classList.add("selected");
-      //   imageContainers[1].classList.remove("selected");
-      //   imageContainers[2].classList.remove("selected");
-      // } else if (nextPercentage >= -20 && nextPercentage <= -10) {
-      //   imageContainers[0].classList.remove("selected");
-      //   imageContainers[1].classList.add("selected");
-      //   imageContainers[2].classList.remove("selected");
-      // } else if (nextPercentage <= -50) {
-      //   imageContainers[0].classList.remove("selected");
-      //   imageContainers[1].classList.remove("selected");
-      //   imageContainers[2].classList.add("selected");
-      // } else {
-      //   imageContainers[0].classList.remove("selected");
-      //   imageContainers[1].classList.remove("selected");
-      //   imageContainers[2].classList.remove("selected");
-      // }
     };
 
     /* -- Had to add extra lines for touch events -- */
@@ -340,7 +323,7 @@ if (document.URL.includes("workcontent.html")) {
         sourceLink.style.display = "flex";
         sourceLink.getElementsByTagName("p")[0].innerHTML =
         "<a href='https://github.com/Butterkn1f/HeroKiller' target='__blank'>Source code here</a>";
-        contentParagraph.innerHTML = "<p>As my <strong>Independent Work Project</strong>, I had to learn to manage and plan my time adequately. As the final project of my studies, I wanted to focus on expanding my horizons and learning to develop new mechanics, hence my choice in Unreal Engine.</p><p>As an aspiring <strong>graphics programmer</strong>, I focused heavily on developing my own post-processing <strong>shaders</strong> and <strong>VFX</strong> for my magic spells. <strong>Style</strong> is the main selling point of this game as well, so I created deep movement with numerous detailed actions that the character can perform - from backflips to slides. Additionally, I implemented smart AI for common enemies and bosses, through the use of <strong>behaviour trees</strong>.</p>"
+        contentParagraph.innerHTML = "<p>Step into Seraphina's shoes in this <strong>stylish action game</strong>, where you utilize her ability to <strong>borrow Gifts</strong> for vengeance against her father's killer. Conquer the hero's clan, strategically managing the <strong>limited space</strong> in her mind amidst ever-changing challenges with <strong>randomized foes</strong> and <strong>dynamic environments</strong>.</p><p>As my <strong>Independent Work Project</strong>, I had to learn to manage and plan my time adequately. As the final project of my studies, I wanted to focus on expanding my horizons and learning to develop new mechanics, hence my choice in Unreal Engine.</p><p>As an aspiring <strong>graphics programmer</strong>, I focused heavily on developing my own post-processing <strong>shaders</strong> and <strong>VFX</strong> for my magic spells. <strong>Style</strong> is the main selling point of this game as well, so I created deep movement with numerous detailed actions that the character can perform - from backflips to slides. Additionally, I implemented smart AI for common enemies and bosses, through the use of <strong>behaviour trees</strong>.</p>"
       break;
     case 1:
       videoPlayer.src = "https://www.youtube.com/embed/ImNnt1CScvk?rel=0";
