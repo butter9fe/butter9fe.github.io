@@ -232,23 +232,26 @@ if (document.URL.includes("work.html")) {
       }
 
       let selectedIndex;
-      if (nextPercentage >= -17) {
+      if (nextPercentage >= -14) {
         selectedIndex = 0;
       }
-      else if (nextPercentage >= -34){
+      else if (nextPercentage >= -28){
         selectedIndex = 1;
       }
-      else if (nextPercentage >= -51){
+      else if (nextPercentage >= -43){
         selectedIndex = 2;
       }
-      else if (nextPercentage >= -68){
+      else if (nextPercentage >= -58){
         selectedIndex = 3;
       }
-      else if (nextPercentage >= -85){
+      else if (nextPercentage >= -72){
         selectedIndex = 4;
       }
-      else {
+      else if (nextPercentage >= -86){
         selectedIndex = 5;
+      }
+      else {
+        selectedIndex = 6;
       }
 
       for (var i = 0; i < imageContainers.length; i++) {
@@ -258,6 +261,7 @@ if (document.URL.includes("work.html")) {
           imageContainers[i].classList.remove("selected");
       }
     };
+
 
     /* -- Had to add extra lines for touch events -- */
 
@@ -287,7 +291,7 @@ if (document.URL.includes("workcontent.html")) {
   page.style.overflowY = "auto";
   const urlParams = new URLSearchParams(window.location.search);
   let id = parseInt(urlParams.get("id") ?? "0");
-  if (id > 5 || id < 0) id = 0;
+  if (id > 6 || id < 0) id = 0;
 
   const nextButton = document.getElementById("nextProject");
   const prevButton = document.getElementById("prevProject");
@@ -311,21 +315,6 @@ if (document.URL.includes("workcontent.html")) {
 
   switch (id) {
     case 0:
-      prevButton.style.display = "none";
-      videoPlayer.src = "https://www.youtube.com/embed/x_sStMQVX84?rel=0";
-      contentOverview.getElementsByTagName("h2")[0].innerHTML =
-        "Hero Killer<span>.</span>";
-        contentOverview.getElementsByTagName("p")[0].innerHTML =
-        "A 3D action side-scroller developed using <strong>Unreal Engine</strong>";
-        personCount.innerHTML = "Solo";
-        madeIn.innerHTML = "February 2024";
-        language.innerHTML = "C++ / Unreal Engine";
-        sourceLink.style.display = "flex";
-        sourceLink.getElementsByTagName("p")[0].innerHTML =
-        "<a href='https://github.com/Butterkn1f/HeroKiller' target='__blank'>Source code here</a>";
-        contentParagraph.innerHTML = "<p>Step into Seraphina's shoes in this <strong>stylish action game</strong>, where you utilize her ability to <strong>borrow Gifts</strong> for vengeance against her father's killer. Conquer the hero's clan, strategically managing the <strong>limited space</strong> in her mind amidst ever-changing challenges with <strong>randomized foes</strong> and <strong>dynamic environments</strong>.</p><p>As my <strong>Independent Work Project</strong>, I had to learn to manage and plan my time adequately. As the final project of my studies, I wanted to focus on expanding my horizons and learning to develop new mechanics, hence my choice in Unreal Engine.</p><p>As an aspiring <strong>graphics programmer</strong>, I focused heavily on developing my own post-processing <strong>shaders</strong> and <strong>VFX</strong> for my magic spells. <strong>Style</strong> is the main selling point of this game as well, so I created deep movement with numerous detailed actions that the character can perform - from backflips to slides. Additionally, I implemented smart AI for common enemies and bosses, through the use of <strong>behaviour trees</strong>.</p>"
-      break;
-    case 1:
       videoPlayer.src = "https://www.youtube.com/embed/ImNnt1CScvk?rel=0";
       contentOverview.getElementsByTagName("h2")[0].innerHTML =
         "Flooded Fables<span>.</span>";
@@ -338,6 +327,21 @@ if (document.URL.includes("workcontent.html")) {
         sourceLink.getElementsByTagName("p")[0].innerHTML =
         "<a href='https://butter9fe.itch.io/flooded-fables?secret=RhzulGCdZumNh0abhpI1dYZCO7Y' target='__blank'>Play the game here!</a>";
         contentParagraph.innerHTML = "<p>Flooded Fables is part of an upcoming <strong>metaverse</strong> under Nanyang Polytechnic's School of Design and Media, in partnership with Memotics. It is the project I worked on for my <strong>Final Year Project</strong> alongside 8 other individuals from 3 different diplomas over the course of 3 months.</p><p>My main responsibilities included developing the <strong>multiplayer networking framework</strong>, implementing all the <strong>user interface and menu</strong> functionality, <strong>chat system</strong>, <strong>maze and boss puzzles</strong>, <strong>ending cutscene</strong>, and <strong>VFX</strong>, among other multiplayer features.</p>";
+      break;
+      case 1:
+      prevButton.style.display = "none";
+      videoPlayer.src = "https://www.youtube.com/embed/eulQX1nqBCw?rel=0";
+      contentOverview.getElementsByTagName("h2")[0].innerHTML =
+        "Hero Killer<span>.</span>";
+        contentOverview.getElementsByTagName("p")[0].innerHTML =
+        "A 3D action side-scroller developed using <strong>Unreal Engine</strong>";
+        personCount.innerHTML = "Solo";
+        madeIn.innerHTML = "February 2024";
+        language.innerHTML = "C++ / Unreal Engine";
+        sourceLink.style.display = "flex";
+        sourceLink.getElementsByTagName("p")[0].innerHTML =
+        "<a href='https://github.com/Butterkn1f/HeroKiller' target='__blank'>Source code here</a>";
+        contentParagraph.innerHTML = "<p>Step into Seraphina's shoes in this <strong>stylish action game</strong>, where you utilize her ability to <strong>borrow Gifts</strong> for vengeance against her father's killer. Conquer the hero's clan, strategically managing the <strong>limited space</strong> in her mind amidst ever-changing challenges with <strong>randomized foes</strong> and <strong>dynamic environments</strong>.</p><p>As my <strong>Independent Work Project</strong>, I had to learn to manage and plan my time adequately. As the final project of my studies, I wanted to focus on expanding my horizons and learning to develop new mechanics, hence my choice in Unreal Engine.</p><p>As an aspiring <strong>graphics programmer</strong>, I focused heavily on developing my own post-processing <strong>shaders</strong> and <strong>VFX</strong> for my magic spells. <strong>Style</strong> is the main selling point of this game as well, so I created deep movement with numerous detailed actions that the character can perform - from backflips to slides. Additionally, I implemented smart AI for common enemies and bosses, through the use of <strong>behaviour trees</strong>.</p>"
       break;
     case 2:
       videoPlayer.src = "https://www.youtube.com/embed/zFsy-p-30XY?rel=0";
@@ -354,10 +358,25 @@ if (document.URL.includes("workcontent.html")) {
           contentParagraph.innerHTML = 
             "<p>Mystic Munchies is an entry for <strong>NYP x H2's Game Jam</strong>! We were given <strong>5 days</strong> to develop a game from the ground up, given the theme of <strong>hypercasual mobile game</strong>. I worked with a team of 5, consisting of students from different diplomas, and managed to clinch <span>3rd Place</span> with this game!</p><p>As one of the 2 developers in the team, my responsibilities included implementing the <strong>level select</strong>, the <strong>tutorial</strong>, <strong>ingredients</strong>, and the <strong>drawing</strong> and its <strong>recognition system</strong>! The last of which was the one that was the most challenging and the feature that I was most proud of.</p><p>After reading a paper about the <a href='https://faculty.washington.edu/wobbrock/pubs/icmi-12.pdf' target='__blank'>$P Point-Cloud Recognizer</a>, I went about implementing it myself in Unity, which was tough considering our tight timeframe. In the end, with the algorithm implemented, I was able to essentially draw any shapes I want to act as <strong>'templates'</strong>, and the algorithm would try to <strong>match</strong> whatever the user drew to my templates, and figure out the shape from there - while giving me a <strong>score</strong> so that I can reject those that are too far off. <p>This algorithm ensured that the recognition system remained extremely <strong>scalable</strong>, and any additional shapes were doable so long as I drew them enough times. Additionally, as the drawings were converted into <strong>vertex points</strong>, the user could draw the shapes <strong>anywhere</strong> on the screen, and at <strong>any size</strong>, and still get recognized.</p>";
       break;
-    case 3:
+      case 3:
+        videoPlayer.src = "https://www.youtube.com/embed/98ywKI9yVtk?rel=0";
+        contentOverview.getElementsByTagName("h2")[0].innerHTML =
+        "Hypercasual Games<span>.</span>";
+        contentOverview.getElementsByTagName("p")[0].innerHTML =
+        "A collection of 3 Hypercasual Games developed in <strong>Unity</strong>: <strong>Dungeon Cuber</strong>, <strong>Pizza Dash</strong>, and <strong>Galatic Guardian</strong>.";
+        personCount.innerHTML = "Solo";
+        madeIn.innerHTML = "May 2023";
+        language.innerHTML = "C# / Unity";
+        sourceLink.style.display = "flex";
+        sourceLink.getElementsByTagName("p")[0].innerHTML =
+          "<a href='images/HypercasualReport.pdf'>View the documentation here!</a>";
+          contentParagraph.innerHTML = 
+            "<p>View the PDF to the left for more details!</p>";
+        break;
+    case 4:
       videoPlayer.src = "https://www.youtube.com/embed/DvPKXcdUnf0?rel=0";
       break;
-    case 4:
+    case 5:
       videoPlayer.src = "https://www.youtube.com/embed/Gq1rKBWCH6Y?rel=0";
       contentOverview.getElementsByTagName("h2")[0].innerHTML =
         "Hollow Knight Remake<span>.</span>";
@@ -369,7 +388,7 @@ if (document.URL.includes("workcontent.html")) {
       contentParagraph.innerHTML =
         "<p>I tried to remake a simplified version of a popular game <strong>Hollow Knight</strong> in <strong>Unity</strong>. This was the first game I made in this game engine, and it was an interesting and challenging experience. The controls and gameplay are <strong>one-to-one</strong> with the original Hollow Knight series. The player is able to attack, jump, and absorb souls to heal.</p><p>There are a total of <strong>two</strong> separate enemies, and one <strong>boss battle</strong>. Each enemy defeated would fill up a <strong>Soul Gauge</strong> that the player can use to heal. The first enemy is just a normal <strong>Crawlid</strong> with no special moves, each attack by the player would cause it to get <strong>knocked back</strong>. The next enemy is a <strong>Husk Warrior</strong>. It can <strong>attack</strong> with its sword when the player is near. It was a <strong>shield</strong>, which it would use to <strong>block</strong> the player when attacked, and take <strong>no damage</strong>. However, each time it uses its shield, it is <strong>unable to move</strong>, so the player can take this chance to <strong>attack from behind</strong> to damage it.</p><p>The final boss battle is the <strong>False Knight</strong>. Upon entering its arena, gates will close behind you - trapping you with the Knight until he is defeated. The False Knight will try to <strong>jump on the player</strong>, and each time the player's attacks hit him, his <strong>armour</strong> will deteriorate. When his armour is completely broken, he will <strong>lie vulnerable on the floor</strong> for a couple seconds, for the player to actually damage it. Each attack in his vulnerable state will also drop <strong>soul</strong>, so the player can also heal while the boss is down.</p>";
       break;
-    case 5:
+    case 6:
       videoPlayer.src = "https://www.youtube.com/embed/sCDDu0kRNyY?rel=0";
       contentOverview.getElementsByTagName("h2")[0].innerHTML =
         "VTuber Site<span>.</span>";
