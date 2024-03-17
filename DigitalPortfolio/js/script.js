@@ -410,8 +410,8 @@ else if (document.URL.includes("workcontent.html")) {
   }
 }
 
-else if (!document.URL.includes("contact.html")) {
-  // URL is empty
-  window.location.replace('/index.html');
+else if (document.URL.substring(document.URL.lastIndexOf("/") + 1).length === 0) {
+  // path is empty, add "/index.html" to end
+  window.location.replace(document.URL.substring(0, document.URL.lastIndexOf("/")) + '/index.html');
 }
 
