@@ -315,6 +315,7 @@ else if (document.URL.includes("workcontent.html")) {
 
   switch (id) {
     case 0:
+      prevButton.style.display = "none";
       videoPlayer.src = "https://www.youtube.com/embed/ImNnt1CScvk?rel=0";
       contentOverview.getElementsByTagName("h2")[0].innerHTML =
         "Flooded Fables<span>.</span>";
@@ -329,7 +330,6 @@ else if (document.URL.includes("workcontent.html")) {
         contentParagraph.innerHTML = "<p>Flooded Fables is part of an upcoming <strong>metaverse</strong> under Nanyang Polytechnic's School of Design and Media, in partnership with Memotics. It is the project I worked on for my <strong>Final Year Project</strong> alongside 8 other individuals from 3 different diplomas over the course of 3 months.</p><p>My main responsibilities included developing the <strong>multiplayer networking framework</strong>, implementing all the <strong>user interface and menu</strong> functionality, <strong>chat system</strong>, <strong>maze and boss puzzles</strong>, <strong>ending cutscene</strong>, and <strong>VFX</strong>, among other multiplayer features.</p>";
       break;
       case 1:
-      prevButton.style.display = "none";
       videoPlayer.src = "https://www.youtube.com/embed/eulQX1nqBCw?rel=0";
       contentOverview.getElementsByTagName("h2")[0].innerHTML =
         "Hero Killer<span>.</span>";
@@ -344,7 +344,7 @@ else if (document.URL.includes("workcontent.html")) {
         contentParagraph.innerHTML = "<p>Step into Seraphina's shoes in this <strong>stylish action game</strong>, where you utilize her ability to <strong>borrow Gifts</strong> for vengeance against her father's killer. Conquer the hero's clan, strategically managing the <strong>limited space</strong> in her mind amidst ever-changing challenges with <strong>randomized foes</strong> and <strong>dynamic environments</strong>.</p><p>As my <strong>Independent Work Project</strong>, I had to learn to manage and plan my time adequately. As the final project of my studies, I wanted to focus on expanding my horizons and learning to develop new mechanics, hence my choice in Unreal Engine.</p><p>As an aspiring <strong>graphics programmer</strong>, I focused heavily on developing my own post-processing <strong>shaders</strong> and <strong>VFX</strong> for my magic spells. <strong>Style</strong> is the main selling point of this game as well, so I created deep movement with numerous detailed actions that the character can perform - from backflips to slides. Additionally, I implemented smart AI for common enemies and bosses, through the use of <strong>behaviour trees</strong>.</p>"
       break;
     case 2:
-      videoPlayer.src = "https://www.youtube.com/embed/zFsy-p-30XY?rel=0";
+      videoPlayer.src = "https://www.youtube.com/embed/GmC1f3_EySE?rel=0";
       contentOverview.getElementsByTagName("h2")[0].innerHTML =
         "Mystic Munchies<span>.</span>";
         contentOverview.getElementsByTagName("p")[0].innerHTML =
@@ -410,7 +410,7 @@ else if (document.URL.includes("workcontent.html")) {
   }
 }
 
-else {
+else if (!document.URL.includes("contact.html")) {
   // URL is empty
   window.location.replace('/index.html');
 }
