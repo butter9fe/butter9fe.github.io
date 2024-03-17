@@ -412,6 +412,6 @@ else if (document.URL.includes("workcontent.html")) {
 
 else {
   // URL is empty
-  window.location.replace = '/index.html';
+  window.location.replace('/index.html');
 }
 
