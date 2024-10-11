@@ -52,6 +52,7 @@ html {
 
 body {
     height: 100vh;
+    width: 100vw;
     color: white;
     /* Hide scrollbar in header */
     overflow: hidden;
@@ -265,7 +266,8 @@ ul {
 
 .page {
     position: relative;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 
@@ -434,7 +436,7 @@ ul {
 }
 
 .landing {
-    animation: background-pan 10s linear infinite;
+    /* animation: background-pan 10s linear infinite; */
     background: linear-gradient(to right,
             var(--main-dark),
             var(--accent),
@@ -490,7 +492,7 @@ ul {
     background-color: var(--background);
     color: var(--text-dark);
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
+    font-size: calc(11px + 0.5vw);
     line-height: 0.9em;
     content: "Click Me!";
     display: flex;
@@ -536,7 +538,7 @@ ul {
     color: var(--background);
     font-family: "Quicksand", sans-serif;
     font-size: 6vw;
-    margin-left: 3rem;
+    margin-left: 2rem;
     width: 50vw;
 }
 
@@ -558,12 +560,12 @@ ul {
 }
 
 #floating-items img {
-    width: 12rem;
+    width: 10vw;
 }
 
 #floating-items img:nth-child(1) {
     position: absolute;
-    left: 5rem;
+    left: 4vw;
     top: 0;
     transform: scaleX(-1);
     animation: float2 4s ease-in-out infinite;
@@ -571,14 +573,14 @@ ul {
 
 #floating-items img:nth-child(2) {
     position: absolute;
-    right: 5rem;
+    right: 3vw;
     bottom: 25rem;
     animation: float 4s ease-in-out infinite;
 }
 
 #floating-items img:nth-child(3) {
     position: absolute;
-    left: 5rem;
+    left: 4vw;
     bottom: 15rem;
     transform: scaleX(-1);
     animation: float3 4s ease-in-out infinite;
@@ -586,7 +588,7 @@ ul {
 
 #scroll {
     position: absolute;
-    left: 45%;
+    left: 40%;
     bottom: 3rem;
     display: flex;
     flex-direction: column;
@@ -635,6 +637,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
+    width: 100%;
 }
 
 .about h2 {
@@ -662,12 +665,12 @@ ul {
     bottom: -2rem;
     background-image: repeating-linear-gradient(-45deg, rgba(47, 78, 177, 1.0), rgba(137, 32, 173, 0.25) 1px, transparent 1px, transparent 6px);
     background-size: 8px 8px;
-    width: 30rem;
-    height: 20rem;
+    width: 25vw;
+    height: 16.67vw;
 }
 
 .about img {
-    width: 30rem;
+    width: 25vw;
     z-index: -5;
 }
 
@@ -775,7 +778,7 @@ ul {
     white-space: nowrap;
     -webkit-user-drag: none;
 
-    animation: titleFlyRight 500ms backwards 1, background-pan 5s linear infinite;
+    /* animation: titleFlyRight 500ms backwards 1, background-pan 5s linear infinite; */
 }
 
 h2>span {
