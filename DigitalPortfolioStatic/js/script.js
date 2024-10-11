@@ -384,7 +384,7 @@ else if (document.URL.includes("workcontent.html")) {
         "2D Game made in <strong>Unity</strong>";
       personCount.innerHTML = "Solo";
       madeIn.innerHTML = "August 2022";
-      language.innerHTML = "C# / Unity";
+      language.innerHTML = "C++ / OpenGL";
       contentParagraph.innerHTML =
         "<p>I tried to remake a simplified version of a popular game <strong>Hollow Knight</strong> in <strong>Unity</strong>. This was the first game I made in this game engine, and it was an interesting and challenging experience. The controls and gameplay are <strong>one-to-one</strong> with the original Hollow Knight series. The player is able to attack, jump, and absorb souls to heal.</p><p>There are a total of <strong>two</strong> separate enemies, and one <strong>boss battle</strong>. Each enemy defeated would fill up a <strong>Soul Gauge</strong> that the player can use to heal. The first enemy is just a normal <strong>Crawlid</strong> with no special moves, each attack by the player would cause it to get <strong>knocked back</strong>. The next enemy is a <strong>Husk Warrior</strong>. It can <strong>attack</strong> with its sword when the player is near. It was a <strong>shield</strong>, which it would use to <strong>block</strong> the player when attacked, and take <strong>no damage</strong>. However, each time it uses its shield, it is <strong>unable to move</strong>, so the player can take this chance to <strong>attack from behind</strong> to damage it.</p><p>The final boss battle is the <strong>False Knight</strong>. Upon entering its arena, gates will close behind you - trapping you with the Knight until he is defeated. The False Knight will try to <strong>jump on the player</strong>, and each time the player's attacks hit him, his <strong>armour</strong> will deteriorate. When his armour is completely broken, he will <strong>lie vulnerable on the floor</strong> for a couple seconds, for the player to actually damage it. Each attack in his vulnerable state will also drop <strong>soul</strong>, so the player can also heal while the boss is down.</p>";
       break;
@@ -399,7 +399,7 @@ else if (document.URL.includes("workcontent.html")) {
       language.innerHTML = "HTML / CSS / Javascript / SQL / PHP";
       sourceLink.style.display = "flex";
       sourceLink.getElementsByTagName("p")[0].innerHTML =
-        "<a href='https://butterkn1f.github.io/VTubers/index.html' target='__blank'>Live Website Link</a>";
+        "<a href='https://butter9fe.github.io/VTubers/index.html' target='__blank'>Live Website Link</a>";
 
       contentParagraph.innerHTML =
         "<p>I made a website to be based on <strong>Virtual YouTubers</strong>, which is a topic I am really passionate about. The website is also <strong>responsive</strong> on mobile and tablet viewports, as seen in the video.</p><p>The 'VIRTUAL' text is purely animated using CSS animations, and so are the other button glitch effects. In the landing page, there is an <strong>infinitely scrolling carousell</strong>.</p><p>There is a lot of interactivity based on scroll position using <strong>Javascript</strong> <p>There is also a database page, which makes use of a database created inside <strong>MySQL</strong>. The search function then filters the database items, through the use of <strong>PHP</strong> to communicate between the website and the database.</p>";
@@ -414,4 +414,3 @@ else if (document.URL.substring(document.URL.lastIndexOf("/") + 1).length === 0)
   // path is empty, add "/index.html" to end
   window.location.replace(document.URL.substring(0, document.URL.lastIndexOf("/")) + '/index.html');
 }
-

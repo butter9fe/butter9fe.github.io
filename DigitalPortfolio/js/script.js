@@ -399,7 +399,7 @@ else if (document.URL.includes("workcontent.html")) {
       language.innerHTML = "HTML / CSS / Javascript / SQL / PHP";
       sourceLink.style.display = "flex";
       sourceLink.getElementsByTagName("p")[0].innerHTML =
-        "<a href='https://butterkn1f.github.io/VTubers/index.html' target='__blank'>Live Website Link</a>";
+        "<a href='https://butter9fe.github.io/VTubers/index.html' target='__blank'>Live Website Link</a>";
 
       contentParagraph.innerHTML =
         "<p>I made a website to be based on <strong>Virtual YouTubers</strong>, which is a topic I am really passionate about. The website is also <strong>responsive</strong> on mobile and tablet viewports, as seen in the video.</p><p>The 'VIRTUAL' text is purely animated using CSS animations, and so are the other button glitch effects. In the landing page, there is an <strong>infinitely scrolling carousell</strong>.</p><p>There is a lot of interactivity based on scroll position using <strong>Javascript</strong> <p>There is also a database page, which makes use of a database created inside <strong>MySQL</strong>. The search function then filters the database items, through the use of <strong>PHP</strong> to communicate between the website and the database.</p>";
